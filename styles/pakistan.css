@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    border: 1px solid black;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    background-image: url(/images/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+nav>ul {
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 0;
+    float: none;
+    padding-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#secondheading, #lastheading {
+  margin-top: 2rem;
+}
+
+.source a {
+    font-size: small;
+    text-decoration: none;
+}
+
+.sections {
+    display: inline-block;
+    text-align: justify;
+    width: 30%;
+    margin: 10px;
+    vertical-align: top;
+
+}
+figure {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+figcaption {
+  padding: 0 1rem;
+}
+
+figure img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+img {
+  object-fit: cover;
+}
+
+section h3, section p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+
+
+.sec2 {
+    display: inline-block;
+    width: 40%;
+    padding: 0px 90px 0px;
+    margin: 0px 40px 10px 10px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#lastheading {
+    text-align: justify;
+    margin-left: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+}
