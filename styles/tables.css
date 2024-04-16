@@ -1,0 +1,15 @@
+.table {
+  margin-bottom: 2rem;
+}
+
+td, th {
+  padding: 0.5rem;
+}
+
+td {
+  border: 1px solid rgba(128, 128, 128, 0.316);
+}
+
+tbody tr:nth-child(2n) {
+  background-color:rgba(85, 163, 180, 0.24)
+}
