@@ -29,10 +29,15 @@
   overflow: hidden;
 }
 
+.gallery-img:hover img {
+  transform: scale(1.05);
+}
+
 .gallery-img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease;
 }
 
 main h2 {
