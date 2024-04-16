@@ -1,0 +1,40 @@
+#gallery-header {
+  background-image: url('/images/foggy-mountains.jpg');
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.gallery {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.gallery-img {
+  aspect-ratio: 1 / 1;
+  /* width: calc(50% - 1.5rem); */
+}
+
+.gallery-img a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main h2 {
+  margin: 2rem 0;
+}
