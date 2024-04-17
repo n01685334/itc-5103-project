@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/homepage.css">
-  <link rel="stylesheet" href="../styles/tables.css">
+  <link rel="stylesheet" href="../styles/reservation.css">
 
   <title>Mountains of the World - Book a Reservation</title>
 </head>
@@ -38,13 +38,61 @@
       </nav>
     </aside>
     <main>
-      <h2>Book a Reservation Today</h2>
+      <h2>Book a Reservation for Expedition Today</h2>
+      <form id="bookingForm">
+        <fieldset id="customer-info">
+          <label for="name">Enter your name *</label>
+          <input id="name" type="text">
+          <label for="email">Enter your email *</label>
+          <input id="email" type="email">
+        </fieldset>
+        <fieldset id="options">
+          <label for=" destination">Destination:</label>
+          <select id="destination">
+            <option value="K2_Base_Camp">K2_Base_Camp</option>
+            <option value="Rakaposhi_Base_Camp">Rakaposhi_Base_Camp</option>
+            <option value="Nangaparbat_Base_Camp">Nangaparbat_Base_Camp</option>
+            <option value="Alishan Mountain Range">Alishan Mountain Range</option>
+            <option value="Yangmingshan / Qixingshan">Yangmingshan / Qixingshan</option>
+            <option value="Yu Shan (Jade Mountain)">Yu Shan (Jade Mountain)</option>
+          </select><br><br>
+
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate"><br><br>
+
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate"><br><br>
+          <div>
+            <label for="facilities">Facilities:</label><br>
+            <input type="checkbox" id="porter" name="facilities" value="porter">
+            <label for="porter">Porter</label><br>
+            <input type="checkbox" id="heli-service" name="facilities" value="heli-service">
+            <label for="heli-service">heli-service</label><br><br>
+          </div>
+        </fieldset>
+
+        <fieldset id="payment">
+          <label for="paymentMethod">Payment Method:</label>
+          <select id="paymentMethod">
+            <option value="creditCard">Credit Card</option>
+            <option value="paypal">PayPal</option>
+          </select><br><br>
+
+          <label for="totalCharges">Total Charges:</label>
+          <span id="totalCharges">$0</span><br><br>
+        </fieldset>
+        <div class="buttons">
+          <button type="button" id="submit">Calculate Charges</button>
+          <button type="button" id="cancel" onclick="cancelBooking()">Cancel Booking</button>
+        </div>
+      </form>
     </main>
   </div>
   <footer>
     <p>Mountains of the World</p>
     <p>Copyright &copy; 2024 Mir Aftab and James Chard</p>
   </footer>
+  <script src="../scripts/reservation.js"></script>
 </body>
 
 </html>
