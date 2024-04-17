@@ -13,3 +13,19 @@ td {
 tbody tr:nth-child(2n) {
   background-color:rgba(85, 163, 180, 0.24)
 }
+
+@media screen and (max-width: 500px) {
+  .table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+
+  .table {
+    width: max-content;
+  }
+
+  td {
+    max-width: 250px;
+  }
+  
+}

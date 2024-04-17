@@ -7,8 +7,6 @@
 }
 
 .gallery {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: row;
@@ -18,7 +16,6 @@
 
 .gallery-img {
   aspect-ratio: 1 / 1;
-  /* width: calc(50% - 1.5rem); */
 }
 
 .gallery-img a {
